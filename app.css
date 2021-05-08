@@ -34,6 +34,17 @@ html {
     font-size: 0.8rem;
 }
 
+.todo {
+    width: 60%;
+    background-color: white;
+    color: black;
+    height: 3vh;
+}
+
+.new {
+    list-style: none;
+}
+
 @media screen and (min-width:650px) {
     nav {
         background-color: white;
@@ -324,8 +335,12 @@ html {
         align-items: center;
         margin-top: 5rem;
     }
-    .addTodo {
-        margin-left: 33%;
+    #addTodo {
+        margin-left: 25%;
+        border: 0px;
+        width: 55%;
+        border-bottom: 2px solid black;
+        background-color: var(--light-gray);
     }
     .calendar {
         margin: auto;
@@ -334,6 +349,19 @@ html {
         width: 80%;
         background-color: var(--bg-main);
         overflow-wrap: break-word;
+    }
+    .todoAdd {
+        display: grid;
+        place-content: center;
+        width: 5%;
+        height: 7vh;
+        background-color: whitesmoke;
+        background-color: rgb(49, 37, 37);
+        color: white;
+        font-size: 1rem;
+        display: inline-block;
+        margin: auto;
+        text-align: center;
     }
     .calendar-header {
         display: flex;
@@ -423,18 +451,21 @@ html {
         margin-top: auto;
         margin-bottom: auto;
         width: 30vw;
-        height: 10vh;
+        height: 37.2px;
         padding: 0.5rem 0rem 0rem 0.3rem;
         display: flex;
+        min-height: 37.2px;
+        max-height: 37.2px;
     }
     .search-btn {
         display: grid;
         place-content: center;
         width: 10vw;
-        height: 7.5vh;
+        height: 29px;
         background-color: whitesmoke;
         margin: auto;
         padding: 0.6rem;
+        max-height: 37.3px;
     }
     .navbar {
         background-color: white;
@@ -471,8 +502,23 @@ html {
         align-items: center;
         margin-top: 5rem;
     }
-    .addTodo {
-        margin-left: 33%;
+    #addTodo {
+        margin-left: 25%;
+        border: 0px;
+        width: 80%;
+        border-bottom: 2px solid black;
+        background-color: var(--light-gray);
+    }
+    .todoAdd {
+        display: grid;
+        place-content: center;
+        width: 20px;
+        height: 7vh;
+        background-color: whitesmoke;
+        background-color: rgb(49, 37, 37);
+        color: white;
+        font-size: 1rem;
+        margin-left: 1rem;
     }
     .calendar {
         margin: auto;
@@ -540,5 +586,8 @@ html {
     }
     .year-picker {
         display: none;
+    }
+    .input {
+        display: flex;
     }
 }
