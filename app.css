@@ -273,18 +273,21 @@ html {
         margin-top: auto;
         margin-bottom: auto;
         width: 30vw;
-        height: 10vh;
+        height: 37.2px;
         padding: 0.5rem 0rem 0rem 0.3rem;
         display: flex;
+        min-height: 37.2px;
+        max-height: 37.2px;
     }
     .search-btn {
         display: grid;
         place-content: center;
         width: 10vw;
-        height: 7.5vh;
+        height: 29px;
         background-color: whitesmoke;
         margin: auto;
         padding: 0.6rem;
+        max-height: 37.3px;
     }
     .navbar {
         background-color: white;
